@@ -1,3 +1,5 @@
+#pragma warning(push, 0)
+
 // dear imgui, v1.63 WIP
 // (main code and documentation)
 
@@ -13962,6 +13964,8 @@ void ImGui::ShowMetricsWindow(bool* p_open)
     ImGui::End();
 }
 
+#pragma warning(pop)
+
 //-----------------------------------------------------------------------------
 
 // Include imgui_user.inl at the end of imgui.cpp to access private data/functions that aren't exposed.
@@ -13971,3 +13975,4 @@ void ImGui::ShowMetricsWindow(bool* p_open)
 #endif
 
 //-----------------------------------------------------------------------------
+

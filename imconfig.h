@@ -13,9 +13,11 @@
 
 #pragma once
 
+#pragma warning(push, 0)
 #include "glm/vec2.hpp"
 #include "glm/vec3.hpp"
 #include "glm/vec4.hpp"
+#pragma warning(pop)
 
 //---- Define assertion handler. Defaults to calling assert().
 //#define IM_ASSERT(_EXPR)  MyAssert(_EXPR)

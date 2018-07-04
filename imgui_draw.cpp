@@ -1,3 +1,5 @@
+#pragma warning(push, 0)
+
 // dear imgui, v1.63 WIP
 // (drawing and font code)
 
@@ -3075,3 +3077,5 @@ static const char* GetDefaultCompressedFontDataTTFBase85()
 {
     return proggy_clean_ttf_compressed_data_base85;
 }
+
+#pragma warning(pop)
