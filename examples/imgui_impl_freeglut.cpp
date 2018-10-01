@@ -1,12 +1,12 @@
-// ImGui Platform Binding for: FreeGLUT
+// dear imgui: Platform Binding for FreeGLUT
 // This needs to be used along with a Renderer (e.g. OpenGL2)
 
 // Issues:
 //  [ ] Platform: GLUT is unable to distinguish e.g. Backspace from CTRL+H or TAB from CTRL+I
+//  [ ] Platform: Missing gamepad support.
 
 // You can copy and use unmodified imgui_impl_* files in your project. See main.cpp for an example of using this.
-// If you use this binding you'll need to call 4 functions: ImGui_ImplXXXX_Init(), ImGui_ImplXXXX_NewFrame(), ImGui::Render() and ImGui_ImplXXXX_Shutdown().
-// If you are new to ImGui, see examples/README.txt and documentation at the top of imgui.cpp.
+// If you are new to dear imgui, read examples/README.txt and read the documentation at the top of imgui.cpp.
 // https://github.com/ocornut/imgui
 
 // CHANGELOG
@@ -98,7 +98,7 @@ void ImGui_ImplFreeGLUT_KeyboardFunc(unsigned char c, int x, int y)
     //printf("char_down_func %d '%c'\n", c, c);
     ImGuiIO& io = ImGui::GetIO();
     if (c >= 32)
-        io.AddInputCharacter(c);
+        io.AddInputCharacter((unsigned short)c);
 
     // Store letters in KeysDown[] array as both uppercase and lowercase + Handle GLUT translating CTRL+A..CTRL+Z as 1..26. 
     // This is a hacky mess but GLUT is unable to distinguish e.g. a TAB key from CTRL+I so this is probably the best we can do here.
