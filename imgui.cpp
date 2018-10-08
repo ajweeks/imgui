@@ -1,3 +1,5 @@
+#pragma warning(push, 0)
+
 // dear imgui, v1.66 WIP
 // (main code and documentation)
 
@@ -13213,6 +13215,8 @@ void ImGui::ShowDockingDebug()
             }
     }
 }
+
+#pragma warning(pop)
 
 //-----------------------------------------------------------------------------
 

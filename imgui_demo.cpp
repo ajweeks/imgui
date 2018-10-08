@@ -1,3 +1,5 @@
+#pragma warning(push, 0)
+
 // dear imgui, v1.66 WIP
 // (demo code)
 
@@ -4110,3 +4112,5 @@ void ImGui::ShowUserGuide() {}
 void ImGui::ShowStyleEditor(ImGuiStyle*) {}
 
 #endif
+
+#pragma warning(pop)
